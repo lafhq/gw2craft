@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Created: 2018-11-15T02:24:21 PST
+# Created: 2018-12-15T20:15:30 PST
 ilist = {
 	8576: u"Bottle of Rice Wine",
 	8587: u"Drottot's Poached Egg",
@@ -5889,6 +5889,7 @@ ilist = {
 	41403: u"Sentinel's Feathered Vestments",
 	41404: u"Sentinel's Masquerade Raiments",
 	41405: u"Sentinel's Exalted Coat",
+	41408: u"Sentinel's Masquerade Gloves",
 	41409: u"Sentinel's Exalted Gloves",
 	41410: u"Sentinel's Feathered Headpiece",
 	41412: u"Sentinel's Masquerade Mask",
@@ -5973,6 +5974,8 @@ ilist = {
 	41497: u"Sentinel's Mithril Pistol",
 	41499: u"Sentinel's Krait Handgun",
 	41500: u"Sentinel's Pearl Handcannon",
+	41501: u"Sentinel's Mithril Rifle",
+	41502: u"Sentinel's Mithril Rifle",
 	41503: u"Sentinel's Krait Shooter",
 	41504: u"Sentinel's Pearl Blunderbuss",
 	41507: u"Sentinel's Krait Short Bow",
@@ -5982,6 +5985,7 @@ ilist = {
 	41515: u"Sentinel's Krait Brazier",
 	41516: u"Sentinel's Pearl Brazier",
 	41517: u"Sentinel's Elder Wood Warhorn",
+	41518: u"Sentinel's Elder Wood Warhorn",
 	41519: u"Sentinel's Krait Whelk",
 	41520: u"Sentinel's Pearl Siren",
 	41522: u"Sentinel's Mithril Axe",
@@ -6856,6 +6860,8 @@ ilist = {
 	49441: u"+18 Agony Infusion",
 	49442: u"+19 Agony Infusion",
 	49443: u"+20 Agony Infusion",
+	49444: u"+21 Agony Infusion",
+	49445: u"+22 Agony Infusion",
 	49522: u"Dire Intricate Gossamer Insignia",
 	49782: u"Watchwork Mechanism",
 	50140: u"Swelter's Gait",
@@ -8213,4 +8219,8 @@ ilist = {
 	1000998: u"Pot of Chrysanthemums",
 	1000999: u"Primordial Leviathan Rib Cage: Left Curved",
 	1001000: u"Primordial Leviathan Rib Cage: Right Curved",
+	1001023: u"Ice Castle: Turret",
+	1001024: u"Ice Castle: Floor",
+	1001025: u"Ice Castle: Wall",
+	1001026: u"Ice Castle: Roof",
 }

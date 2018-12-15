@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Created: 2018-11-15T02:24:42 PST
+# Created: 2018-12-15T20:15:38 PST
 ilist = {
 	8576: u"Bouteille d'alcool de riz",
 	8587: u"Œuf poché façon Drottot",
@@ -5889,6 +5889,7 @@ ilist = {
 	41403: u"Habits à plumes sentinelles",
 	41404: u"Parure de mascarade sentinelle",
 	41405: u"Manteau exalté sentinelle",
+	41408: u"Gants de mascarade sentinelles",
 	41409: u"Gants exaltés sentinelles",
 	41410: u"Coiffe à plumes sentinelle",
 	41412: u"Masque de mascarade sentinelle",
@@ -5973,6 +5974,8 @@ ilist = {
 	41497: u"Pistolet en mithril sentinelle",
 	41499: u"Arme de poing krait sentinelle",
 	41500: u"Canon à main de perles sentinelle",
+	41501: u"Fusil en mithril sentinelle",
+	41502: u"Fusil en mithril sentinelle",
 	41503: u"Arme de tir krait sentinelle",
 	41504: u"Tromblon de perles sentinelle",
 	41507: u"Arc court krait sentinelle",
@@ -5982,6 +5985,7 @@ ilist = {
 	41515: u"Brasero krait sentinelle",
 	41516: u"Brasero de perles sentinelle",
 	41517: u"Cor de guerre en bois ancestral sentinelle",
+	41518: u"Cor de guerre en bois ancestral sentinelle",
 	41519: u"Buccin krait sentinelle",
 	41520: u"Sirène de perles sentinelle",
 	41522: u"Hache en mithril sentinelle",
@@ -6856,6 +6860,8 @@ ilist = {
 	49441: u"Infusion de résistance à l'agonie +18",
 	49442: u"Infusion de résistance à l'agonie +19",
 	49443: u"Infusion de résistance à l'agonie +20",
+	49444: u"Infusion de résistance à l'agonie +21",
+	49445: u"Infusion de résistance à l'agonie +22",
 	49522: u"Insigne en tulle entrelacé sanguinaire",
 	49782: u"Engrenage mécanique",
 	50140: u"Démarche estivale",
@@ -8213,4 +8219,8 @@ ilist = {
 	1000998: u"Pot de chrysanthèmes",
 	1000999: u"Cage thoracique de Léviathan primordial : incurvée à gauche",
 	1001000: u"Cage thoracique de Léviathan primordial : incurvée à droite",
+	1001023: u"Château de glace : tourelle",
+	1001024: u"Château de glace : sol",
+	1001025: u"Château de glace : mur",
+	1001026: u"Château de glace : toit",
 }

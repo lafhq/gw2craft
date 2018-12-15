@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''
+"""
 * Copyright (c) 2013-2016 Jeremy Parks. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a
@@ -23,7 +23,7 @@
 Author: Jeremy Parks
 Purpose: Function for writing output files to local filesystem.
 Note: Requires Python 2.7.x
-'''
+"""
 
 import codecs
 import os

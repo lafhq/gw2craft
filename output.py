@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''
+"""
 * Copyright (c) 2013-2016 Jeremy Parks. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a
@@ -23,10 +23,9 @@
 Author: Jeremy Parks
 Purpose: Interface for writing output files, regardless of method.
 Note: Requires Python 2.7.x
-'''
-
+"""
 
 # Switch which line is commented out to switch output method.
-from output_aws import write_file		# For uploading files to AWS
+# from output_aws import write_file		# For uploading files to AWS
 # from output_ftp import write_file		# For uploading files via FTP
-# from output_local import write_file	# For writing files to disk
+from output_local import write_file	# For writing files to disk

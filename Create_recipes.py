@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''
+"""
 * Copyright (c) 2013-2016 Jeremy Parks. All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a
@@ -24,7 +24,7 @@
 Author: Jeremy Parks
 Purpose: Generates(or updates) all the recipes and the item list used by Crafting.py
 Note: Requires Python 2.7.x
-'''
+"""
 import codecs
 import json
 import os
@@ -151,7 +151,7 @@ def parse_recipes(recipes):
 				page += u"\t\t{}: {{{}}},\n".format(obj, mystr[:-2])
 			page += u"\t},\n"
 		page += u"}"
-		with codecs.open("auto_gen\\" + craft + ".py", "wb", encoding='utf-8') as f:
+		with codecs.open("auto_gen/" + craft + ".py", "wb", encoding='utf-8') as f:
 			f.write(page)
 
 	for item in [38207, 38208, 38209, 38295, 38296, 38297]:
@@ -229,7 +229,7 @@ def itemlist(item_list, gulist, lang=u"en"):
 				print 'Error ilist: {}.'.format(str(err))
 				#exit()
 		page += u'}'
-		with codecs.open("auto_gen\\Items.py", "wb", encoding='utf-8') as f:
+		with codecs.open("auto_gen/Items.py", "wb", encoding='utf-8') as f:
 			f.write(page.replace(u": ", ":"))
 
 	page = u'# -*- coding: utf-8 -*-\n'
@@ -242,7 +242,7 @@ def itemlist(item_list, gulist, lang=u"en"):
 		except Exception, err:
 			print 'Error items: {}.\n'.format(str(err))
 	page += u'}'
-	with codecs.open("auto_gen\\Items_%s.py" % lang, "wb", encoding='utf-8') as f:
+	with codecs.open("auto_gen/Items_%s.py" % lang, "wb", encoding='utf-8') as f:
 		f.write(page)
 
 
