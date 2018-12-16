@@ -370,7 +370,7 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
         u'	<meta name="keywords" content="best videogames, free mmos, free mmorpg, best free mmorpg, best mmorpg, free to play, mmos, mmorpg, free game, online games, fantasy games, PC games, PC gaming, crafting guide, crafting guides, Guild Wars 2, Trading Post"/>\n')
     page.append(u'	<meta http-equiv="content-type" content="text/html;charset=UTF-8">\n')
     page.append(u'	<link href="./css/layout.css" rel="stylesheet" type="text/css" />')
-    page.append(u'	<link rel="icon" type="image/png" href="/fi.gif">\n')
+    page.append(u'	<link rel="icon" type="image/png" href="./fi.gif">\n')
     page.append(u'	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>\n')
     page.append(
         u'	<script>(window.jQuery || document.write(\'<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"><\/script>\'));</script>\n')
@@ -791,7 +791,7 @@ def maketotals(totals, mytime, localText):
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 
 	<link href="./css/layout.css" rel="stylesheet" type="text/css" />
-	<link rel="icon" type="image/png" href="/fi.gif" />
+	<link rel="icon" type="image/png" href="./fi.gif" />
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<script src="./js/menu.js" type="text/javascript"></script>

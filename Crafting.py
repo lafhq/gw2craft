@@ -155,7 +155,8 @@ def resources():
     copy("html_include/apple-touch-icon.png", "html/")
     copy("html_include/apple-touch-icon-precomposed.png", "html/")
     copy("html_include/apple-touch-icon-144x144-precomposed.png", "html/")
-    copy("html_include/apple-touch-icon-72x72-precomposed.png", "html/")
+    copy("html_include/fi.gif","html/")
+    copy("html_include/favicon.ico","html/")
 
 
 def clean():
