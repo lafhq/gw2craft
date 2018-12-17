@@ -392,7 +392,7 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
         u'<div style="width: 100%; border: 2px #fffaaa solid; border-left: 0px; border-right: 0px; background: #fffddd; height: 24px;">\n')
     page.append(
         u'<span class=\"warning\"></span><span style="position: relative; top: 4px;"><span style="color: red">%s</span>	%s: %s</span>\n' % (
-        localText.warning1, localText.warning2, mytime))
+            localText.warning1, localText.warning2, mytime))
     page.append(u'</div><br />\n')
     if u'scribe' in filename:
         page.append(u'<div>\n')
@@ -429,20 +429,19 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
 
     page.append(
         u'<br /><button title=\"%s\" class=\"arrow\" id=\"tcost\">%s:</button><div class=\"lsbutton\" id=\"1tcost\">' % (
-        localText.toggle, localText.sList))
+            localText.toggle, localText.sList))
     for line in sorted(sell):
         if cList[line][u'w'] > 0:
             t = (t + 1) % 2
             page.append(u'<div class=\"s%i\">%3i <span class=\"%s\">%s</span> - %s %s</div>\n' % (
-            t, sell[line], cList[line][u'rarity'], cListName[line], (localText.soldVia % mFormat(cList[line][u'w'])),
-            localText.method[cList[line][u'sellMethod']]))
+                t, sell[line], cList[line][u'rarity'], cListName[line],
+                (localText.soldVia % mFormat(cList[line][u'w'])),
+                localText.method[cList[line][u'sellMethod']]))
 
     page.append(u"</div><script type=\"text/javascript\">$('#1tcost').hide();</script><br />")
     buttonList.append(u'tcost')
     page.append(
-        u'<!-- Ezoic - page_title_2 - under_page_title -->\n<div id="ezoic-pub-ad-placeholder-106"></div>\n<!-- End Ezoic - page_title_2 - under_page_title -->')
-    page.append(
-        u'<br /><br /><input type="text" id="api_key" name="api key" placeholder="Enter API key here" style=\'text-align: center;\'><br />')
+        u'<br /><br /><input type="text" id="api_key" name="api key" placeholder="Enter API key here" style=\'text-align: center;\' size="85px"><br />')
     page.append(
         u'<button type="button" onclick="updateBank(document.getElementById(\'api_key\').value.trim());" style=\'text-align: center;\'>Get Bank Content</button>\n')
     page.append(
@@ -481,28 +480,26 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
                     t, cList[item][u'icon'], buy[item], cList[item][u'rarity'], cListName[item],
                     mFormat(cList[item][u'cost']), localText.valuePer, localText.method[0], item, cList[item][u'cost']))
 
-    page.append(
-        u'<!-- Ezoic - first_paragraph - under_first_paragraph -->\n<div id="ezoic-pub-ad-placeholder-107"></div>\n<!-- End Ezoic - first_paragraph - under_first_paragraph -->')
     if recipebuy:
         page.append(u"<h2>%s</h2>\n" % localText.bRecipes)
         for item in recipebuy:
             t = (t + 1) % 2
             if karma_recipe[item][u'cost']:
                 page.append((
-                                        u"<div class=\"s%d\"><input type=\"checkbox\" /><span class=\"itemIcon\" style=\"background-image: url(%s);\"></span><button title=\"" + localText.toggle + u"\" class=\"arrow %s\" id=\"%d\">%s</button><div class=\"lsbutton\" id=\"1%d\">%i <span class=\"karmaIcon\"></span>, %s</div></div>\n") % (
-                            t, cList[item][u'icon'], cList[item][u'rarity'], item, cListName[item], item,
-                            karma_recipe[item][u'cost'], karma_recipe[item][u'note']))
+                                    u"<div class=\"s%d\"><input type=\"checkbox\" /><span class=\"itemIcon\" style=\"background-image: url(%s);\"></span><button title=\"" + localText.toggle + u"\" class=\"arrow %s\" id=\"%d\">%s</button><div class=\"lsbutton\" id=\"1%d\">%i <span class=\"karmaIcon\"></span>, %s</div></div>\n") % (
+                                t, cList[item][u'icon'], cList[item][u'rarity'], item, cListName[item], item,
+                                karma_recipe[item][u'cost'], karma_recipe[item][u'note']))
             else:
                 if item in rsps:
                     page.append((
-                                            u"<div class=\"s%d\"><input type=\"checkbox\" /><span class=\"itemIcon\" style=\"background-image: url(%s);\"></span><button title=\"" + localText.toggle + u"\" class=\"arrow %s\" id=\"%d\">%s</button><div class=\"lsbutton\" id=\"1%d\">%s</div></div>\n") % (
-                                t, cList[item]['icon'], cList[item][u'rarity'], item, cListName[rsps[item]], item,
-                                karma_recipe[item][u'note']))
+                                        u"<div class=\"s%d\"><input type=\"checkbox\" /><span class=\"itemIcon\" style=\"background-image: url(%s);\"></span><button title=\"" + localText.toggle + u"\" class=\"arrow %s\" id=\"%d\">%s</button><div class=\"lsbutton\" id=\"1%d\">%s</div></div>\n") % (
+                                    t, cList[item]['icon'], cList[item][u'rarity'], item, cListName[rsps[item]], item,
+                                    karma_recipe[item][u'note']))
                 else:
                     page.append((
-                                            u"<div class=\"s%d\"><input type=\"checkbox\" /><span class=\"itemIcon\" style=\"background-image: url(%s);\"></span><button title=\"" + localText.toggle + u"\" class=\"arrow %s\" id=\"%d\">%s</button><div class=\"lsbutton\" id=\"1%d\">%s</div></div>\n") % (
-                                t, cList[item]['icon'], cList[item][u'rarity'], item, cListName[item], item,
-                                karma_recipe[item][u'note']))
+                                        u"<div class=\"s%d\"><input type=\"checkbox\" /><span class=\"itemIcon\" style=\"background-image: url(%s);\"></span><button title=\"" + localText.toggle + u"\" class=\"arrow %s\" id=\"%d\">%s</button><div class=\"lsbutton\" id=\"1%d\">%s</div></div>\n") % (
+                                    t, cList[item]['icon'], cList[item][u'rarity'], item, cListName[item], item,
+                                    karma_recipe[item][u'note']))
             buttonList.append(item)
             kt += int(karma_recipe[item][u'cost'])
     if kt:
@@ -540,8 +537,7 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
             page.append(
                 collectable_str.format(t, cList[item][u'icon'], buy[item], cList[item][u'rarity'], cListName[item],
                                        mFormat(cList[item][u'cost']), item, cList[item][u'cost']))
-    page.append(
-        u'<!-- Ezoic - second_paragraph - under_second_paragraph -->\n<div id="ezoic-pub-ad-placeholder-108"></div>\n<!-- End Ezoic - second_paragraph - under_second_paragraph -->')
+
     if b_mix:
         page.append(remaining)
         page.append(u'<h2>%s</h2>\n' % localText.mixedTP)
@@ -550,16 +546,10 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
             page.append(
                 collectable_str.format(t, cList[item][u'icon'], buy[item], cList[item][u'rarity'], cListName[item],
                                        mFormat(cList[item][u'cost']), item, cList[item][u'cost']))
-    page.append(
-        u'<!-- Ezoic - mid_content - mid_content -->\n<div id="ezoic-pub-ad-placeholder-109"></div>\n<!-- End Ezoic - mid_content - mid_content -->')
 
     page.append(u"<br />\n<br />\n<h2>%s</h2>\n" % localText.make)
-    # adword adaptive
     page.append(u'<br /><div style="width: 100%;display:block;">\n')
-    page.append(
-        u'<!-- Ezoic - first banner - mid_content -->\n<div id="ezoic-pub-ad-placeholder-104"></div>\n<!-- End Ezoic - first banner - mid_content -->\n')
     page.append(u'</div>\n')
-
     page.append(
         u"<button title=\"" + localText.toggle + u"\" class =\"info\" id=\"show_all\">%s</button><br />" % localText.expand)
     page.append(
@@ -601,7 +591,7 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
                         t = (t + 1) % 2
                         page.append(u"<div class=\"s" + str(
                             t) + u"\">" + localText.make + u":%3i <span class=\"%s\">%s</span></div>\n" % (
-                                    make[lvl][item], cList[item][u'rarity'], cListName[item]))
+                                        make[lvl][item], cList[item][u'rarity'], cListName[item]))
 
         if tierbuy and tier in [0, 75, 150, 225, 300]:
             tt = 0
@@ -610,7 +600,7 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
                 tc += 25
             page.append((u"<br /><br /><h4>%s:<button title=\"" + localText.toggle + u"\" class =\"info\" id=\"" + str(
                 tier) + u"tier\">%s</button></h4>\n<div class=\"lsbutton\" id=\"1" + str(tier) + u"tier\">") % (
-                        (localText.tier % (tier / 75 + 1, tier, tc)), localText.buyList % (tier / 75 + 1)))
+                            (localText.tier % (tier / 75 + 1, tier, tc)), localText.buyList % (tier / 75 + 1)))
             page.append(u"<h5>%s</h5>" % localText.blNotice)
             for item in sorted(tierbuy[tier]):
                 t = (t + 1) % 2
@@ -618,8 +608,8 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
                     t) + u"\"><input type=\"checkbox\" /><span class=\"itemIcon\" style=\"background-image: url(" +
                              cList[item][
                                  u'icon'] + u");\"></span><span class=\"quantity\">%i</span> <span class=\"%s\">%s</span> (%4s " + localText.valuePer + u")</div>\n") % (
-                            tierbuy[tier][item], cList[item][u'rarity'], cListName[item],
-                            mFormat(cList[item][u'cost'])))
+                                tierbuy[tier][item], cList[item][u'rarity'], cListName[item],
+                                mFormat(cList[item][u'cost'])))
                 tt += tierbuy[tier][item] * cList[item][u'cost']
             buttonList.append(str(tier) + u'tier')
             rt += tt
@@ -631,29 +621,29 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
                 t = (t + 1) % 2
                 page.append(u"<div class=\"s" + str(
                     t) + u"\"><input type=\"checkbox\" />" + localText.make + u":%3i <span class=\"%s\">%s</span> (From %i tier) </div>\n" % (
-                            pmake[tier][item], cList[item][u'rarity'], cListName[item], tier - 25))
+                                pmake[tier][item], cList[item][u'rarity'], cListName[item], tier - 25))
         for item in sorted(make[tier], key=make[tier].get, reverse=True):
             if cList[item][u'type'] == u'Refinement':
                 t = (t + 1) % 2
                 if item == 19679:  # Bronze Ingot
                     page.append((u"<div class=\"s" + str(
                         t) + u"\"><input type=\"checkbox\" />" + localText.make + u":%3i <span class=\"%s\">%s</span> (%s)</div>\n") % (
-                                make[tier][item], cList[item][u'rarity'], cListName[item], localText.bNote))
+                                    make[tier][item], cList[item][u'rarity'], cListName[item], localText.bNote))
                 else:
                     page.append(u"<div class=\"s" + str(
                         t) + u"\"><input type=\"checkbox\" />" + localText.make + u":%3i <span class=\"%s\">%s</span></div>\n" % (
-                                make[tier][item], cList[item][u'rarity'], cListName[item]))
+                                    make[tier][item], cList[item][u'rarity'], cListName[item]))
         for item in sorted(make[tier], key=make[tier].get, reverse=True):
             if cList[item][u'type'] in non_item and not cList[item][u'type'] == u'Refinement':
                 t = (t + 1) % 2
                 if item in [13063, 13189, 13207, 13219, 13045, 13022, 13075, 13177, 13096, 13033, 13201, 13231]:  # Sole
                     page.append((u"<div class=\"s" + str(
                         t) + u"\"><input type=\"checkbox\" />" + localText.make + u":%3i <span class=\"%s\">%s</span> (%s)</div>\n") % (
-                                make[tier][item] / 2, cList[item][u'rarity'], cListName[item], localText.sNote))
+                                    make[tier][item] / 2, cList[item][u'rarity'], cListName[item], localText.sNote))
                 else:
                     page.append(u"<div class=\"s" + str(
                         t) + u"\"><input type=\"checkbox\" />" + localText.make + u":%3i <span class=\"%s\">%s</span></div>\n" % (
-                                make[tier][item], cList[item][u'rarity'], cListName[item]))
+                                    make[tier][item], cList[item][u'rarity'], cListName[item]))
 
         index = 0
         if tier == 425:
@@ -685,7 +675,7 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
                     t = (t + 1) % 2
                     page.append(u"<div class=\"s" + str(
                         t) + u"\"><input type=\"checkbox\" />" + localText.make + u":%3i <span class=\"%s\">%s</span></div>\n" % (
-                                make[tier][item], cList[item][u'rarity'], cListName[item]))
+                                    make[tier][item], cList[item][u'rarity'], cListName[item]))
             for item in sorted(make[tier]):
                 try:
                     index = cList[item][u'tier'].index(400)
@@ -718,7 +708,7 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
                     t = (t + 1) % 2
                     page.append(u"<div class=\"s" + str(
                         t) + u"\"><input type=\"checkbox\" />" + localText.make + u":%3i <span class=\"%s\">%s</span></div>\n" % (
-                                make[tier][item], cList[item][u'rarity'], cListName[item]))
+                                    make[tier][item], cList[item][u'rarity'], cListName[item]))
         else:
             for item in sorted(make[tier]):
                 if craftexo:
@@ -751,14 +741,12 @@ def printtofile(tcost, treco, sell, craftexo, mTiers, make, pmake, buy, tierbuy,
                     t = (t + 1) % 2
                     page.append(u"<div class=\"s" + str(
                         t) + u"\"><input type=\"checkbox\" />" + localText.make + u":%3i <span class=\"%s\">%s</span></div>\n" % (
-                                make[tier][item], cList[item][u'rarity'], cListName[item]))
+                                    make[tier][item], cList[item][u'rarity'], cListName[item]))
     page.append(u'<br />\n<h3>%s:%i</h3>\n' % (localText.level, tier + 25))
     t = (t + 1) % 2
     page.append(u"<div class=\"s" + str(t) + u"\">%s</div>\n" % localText.finish)
     # adword adaptive
     page.append(u'<br /><div style="width: 100%;display:block;">\n')
-    page.append(
-        u'<!-- Ezoic - Tail - bottom_of_page -->\n<div id="ezoic-pub-ad-placeholder-102"></div>\n<!-- End Ezoic - Tail - bottom_of_page -->')
     page.append(u'</div>\n')
     page.append(u'</section>\n')
     page.append(u'%s\n<script type="text/javascript">\n' % localText.cright)
@@ -808,7 +796,7 @@ def maketotals(totals, mytime, localText):
 
 </script>"""
     page += localText.header % (
-    u'total.html', u'total.html', u'total.html', u'total.html', u'total.html', u'total.html')
+        u'total.html', u'total.html', u'total.html', u'total.html', u'total.html', u'total.html')
     page += u"<section class=\"main\">\n<strong>%s</strong><br />\n" % (localText.region)
     page += u"<h5 style=\"text-align:center;\">" + localText.updated + u": " + mytime + u"</h5>"
     # adword

@@ -34,13 +34,6 @@ def faq(localText):
 	page = u"<!DOCTYPE html>\n"
 	page += u"<html>\n"
 	page += u"<head>\n"
-	page += u'''<!-- Ezoic Code -->
-<script>var ezoicId = 39853;</script>
-<script type="text/javascript" src="//go.ezoic.net/ezoic/ezoic.js"></script>
-<!-- Ezoic Code -->
-<!-- Ezoic Ad Testing Code-->
-<script src="//g.ezoic.net/ezoic/ezoiclitedata.go?did=39853"></script>
-<!-- Ezoic Ad Testing Code-->'''
 	page += u"	<title>%s</title>\n"%(localText.about)
 	page += u"	<meta name=\"description\" content=\"ACCG FAQ and Contact information\">\n"
 	page += u'	<meta name="keywords" content="best videogames, free mmos, free mmorpg, best free mmorpg, best mmorpg, free to play, mmos, mmorpg, free game, online games, fantasy games, PC games, PC gaming, crafting guide, crafting guides, Guild Wars 2, Trading Post"/>\n'
@@ -141,8 +134,6 @@ def faq(localText):
 
 	output.write_file(localText.path,u'faq.html',page)
 	return
-
-
 
 # Generate a nav using local strings
 def nav(localText):
@@ -296,9 +287,7 @@ def index(localText):
 #	page += u"%s\n<br />"%(localText.thanks2)
 	# adword adaptive
 	page += u'<br /><hr><br /><div style="width: 100%;display:block;">\n \
-<!-- Ezoic - Tail - bottom_of_page -->\n \
-<div id="ezoic-pub-ad-placeholder-102"></div>\n \
-<!-- End Ezoic - Tail - bottom_of_page --></div>\n'
+</div>\n'
 	page += u"</section>\n"
 	page += localText.cright
 	page += u"</body>\n"
