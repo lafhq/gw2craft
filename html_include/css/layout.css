@@ -6,7 +6,7 @@ dt {
     float: left;
     text-align: right;
     width: 160px;
-    margin-bottom: 0em;
+    margin-bottom: 0;
     font-weight: 100;
     color: #666;
 }
@@ -14,8 +14,8 @@ dt {
 dd {
     margin-left: 25px;
     float: left;
-    width: 200 pxem;
-    margin-bottom: 0em;
+    width: 200px;
+    margin-bottom: 0;
 }
 
 .clear {
@@ -43,27 +43,27 @@ dd {
 }
 
 span.goldIcon, span.silverIcon, span.copperIcon, span.karmaIcon {
-    background: url() no-repeat left bottom;
+    background: no-repeat left bottom;
     background-size: 12px 12px;
     display: inline-block;
     position: relative;
     top: 1px;
     margin-left: 1px;
-    margin-right: 0px;
+    margin-right: 0;
     width: 12px;
     height: 12px;
 }
 
 span.itemIcon {
-    background: url() no-repeat left bottom;
+    background: no-repeat left bottom;
     background-size: 24px 24px;
     display: inline-block;
     position: relative;
     vertical-align: middle;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
     width: 24px;
     height: 24px;
 }
@@ -82,7 +82,7 @@ input[readonly] {
 }
 
 input:placeholder-shown {
-    background-color:: rgba(155, 255, 155, 0.75);
+    background-color: rgba(155, 255, 155, 0.75);
 }
 
 input[type=text]:hover {
@@ -95,17 +95,16 @@ input[readonly][data-need="more"] {
 }
 
 input[readonly][data-need="done"] {
-    background-color:: rgba(0, 255, 0, 0.5);
+    background-color: rgba(0, 255, 0, 0.5);
     color: transparent
 }
 
 span.warning {
-    background: url() no-repeat left bottom;
+    background: url(../img/warning-icon.gif) no-repeat left bottom;
     width: 24px;
     height: 24px;
     padding: 0 8px 0 8px;
     float: left;
-    background-image: url(../img/warning-icon.gif);
 }
 
 /*
@@ -113,19 +112,19 @@ span.warning::after  {
 	content:"WARNING";}
 */
 span.goldIcon {
-    background-image: url(../img/Gold_coin.gif);
+    background: url(../img/Gold_coin.gif) no-repeat left bottom;
 }
 
 span.silverIcon {
-    background-image: url(../img/Silver_coin.gif);
+    background: url(../img/Silver_coin.gif) no-repeat left bottom;
 }
 
 span.copperIcon {
-    background-image: url(../img/Copper_coin.gif);
+    background: url(../img/Copper_coin.gif) no-repeat left bottom;
 }
 
 span.karmaIcon {
-    background-image: url(../img/Karma.gif);
+    background: url(../img/Karma.gif) no-repeat left bottom;
 }
 
 span.quantity {
@@ -179,7 +178,7 @@ table, td, th {
     border: 1px solid black;
     background-color: rgb(200, 200, 200);
     color: rgb(20, 20, 20);
-    margin: 0% 0%;
+    margin: 0 0;
 }
 
 table {
@@ -199,8 +198,8 @@ button.arrow {
     background-color: inherit;
     background: url('../img/arrow.png') no-repeat right center;
     text-decoration: none;
-    margin: 0px 0px;
-    padding: 0px 20px 0px 0px;
+    margin: 0 0;
+    padding: 0 20px 0 0;
     display: inline-block;
     vertical-align: middle;
     font-size: 16px;
@@ -245,7 +244,7 @@ button.info {
     border-style: solid;
     border-width: 1px;
     text-decoration: none;
-    margin: 0px 0px;
+    margin: 0 0;
     padding: 3px 8px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -296,7 +295,7 @@ div.s1 {
     border-radius: 3px;
     background-color: rgb(185, 185, 185);
     padding: 6px;
-    margin: 1px
+    margin: 1px;
     line-height: 1em;
 }
 
@@ -305,7 +304,7 @@ div.s0 {
     border-radius: 3px;
     background-color: rgb(220, 220, 220);
     padding: 6px;
-    margin: 1px
+    margin: 1px;
     line-height: 1em;
 }
 
@@ -332,7 +331,6 @@ nav {
     left: 0;
     right: 0;
     z-index: 10;
-    float: center;
     text-align: center;
     position: fixed;
     -moz-border-radius: 3px;
@@ -352,7 +350,7 @@ nav ul li:hover > ul {
 
 nav ul {
     background: rgb(150, 150, 150);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     padding: 0 8px;
     margin: 0 auto;
     list-style: none;
@@ -392,7 +390,7 @@ nav ul li a {
 
 nav ul ul {
     background: rgb(95, 95, 95);
-    border-radius: 0px;
+    border-radius: 0;
     padding: 0;
     position: absolute;
     top: 100%;
